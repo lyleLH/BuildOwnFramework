@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9871DB4F1E543837007EFA7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9871DB4E1E543837007EFA7E /* main.m */; };
+		9871DB521E543837007EFA7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9871DB511E543837007EFA7E /* AppDelegate.m */; };
+		9871DB5A1E543837007EFA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9871DB591E543837007EFA7E /* Assets.xcassets */; };
+		9871DB5D1E543837007EFA7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9871DB5B1E543837007EFA7E /* LaunchScreen.storyboard */; };
+		9871DB6C1E543B0B007EFA7E /* libRWUIControls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9871DB691E543A11007EFA7E /* libRWUIControls.a */; };
+		9871DB711E543B44007EFA7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9871DB6E1E543B44007EFA7E /* Main.storyboard */; };
+		9871DB721E543B44007EFA7E /* RWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9871DB701E543B44007EFA7E /* RWViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9871DB681E543A11007EFA7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9871DB641E543A10007EFA7E /* RWUIControls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9871DB1C1E543592007EFA7E;
+			remoteInfo = RWUIControls;
+		};
+		9871DB6A1E543B04007EFA7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9871DB641E543A10007EFA7E /* RWUIControls.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9871DB1B1E543592007EFA7E;
+			remoteInfo = RWUIControls;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9871DB4A1E543837007EFA7E /* UIControlDevApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIControlDevApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9871DB4E1E543837007EFA7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9871DB501E543837007EFA7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9871DB511E543837007EFA7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9871DB591E543837007EFA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9871DB5C1E543837007EFA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9871DB5E1E543837007EFA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9871DB641E543A10007EFA7E /* RWUIControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RWUIControls.xcodeproj; path = ../../RWUIControls/RWUIControls.xcodeproj; sourceTree = "<group>"; };
+		9871DB6E1E543B44007EFA7E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9871DB6F1E543B44007EFA7E /* RWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWViewController.h; sourceTree = "<group>"; };
+		9871DB701E543B44007EFA7E /* RWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9871DB471E543837007EFA7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9871DB6C1E543B0B007EFA7E /* libRWUIControls.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9871DB411E543837007EFA7E = {
+			isa = PBXGroup;
+			children = (
+				9871DB4C1E543837007EFA7E /* UIControlDevApp */,
+				9871DB4B1E543837007EFA7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9871DB4B1E543837007EFA7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9871DB4A1E543837007EFA7E /* UIControlDevApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9871DB4C1E543837007EFA7E /* UIControlDevApp */ = {
+			isa = PBXGroup;
+			children = (
+				9871DB6D1E543B44007EFA7E /* DevApp */,
+				9871DB641E543A10007EFA7E /* RWUIControls.xcodeproj */,
+				9871DB501E543837007EFA7E /* AppDelegate.h */,
+				9871DB511E543837007EFA7E /* AppDelegate.m */,
+				9871DB591E543837007EFA7E /* Assets.xcassets */,
+				9871DB5B1E543837007EFA7E /* LaunchScreen.storyboard */,
+				9871DB5E1E543837007EFA7E /* Info.plist */,
+				9871DB4D1E543837007EFA7E /* Supporting Files */,
+			);
+			path = UIControlDevApp;
+			sourceTree = "<group>";
+		};
+		9871DB4D1E543837007EFA7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9871DB4E1E543837007EFA7E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9871DB651E543A10007EFA7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9871DB691E543A11007EFA7E /* libRWUIControls.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9871DB6D1E543B44007EFA7E /* DevApp */ = {
+			isa = PBXGroup;
+			children = (
+				9871DB6E1E543B44007EFA7E /* Main.storyboard */,
+				9871DB6F1E543B44007EFA7E /* RWViewController.h */,
+				9871DB701E543B44007EFA7E /* RWViewController.m */,
+			);
+			path = DevApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9871DB491E543837007EFA7E /* UIControlDevApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9871DB611E543837007EFA7E /* Build configuration list for PBXNativeTarget "UIControlDevApp" */;
+			buildPhases = (
+				9871DB461E543837007EFA7E /* Sources */,
+				9871DB471E543837007EFA7E /* Frameworks */,
+				9871DB481E543837007EFA7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9871DB6B1E543B04007EFA7E /* PBXTargetDependency */,
+			);
+			name = UIControlDevApp;
+			productName = UIControlDevApp;
+			productReference = 9871DB4A1E543837007EFA7E /* UIControlDevApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9871DB421E543837007EFA7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = lyle;
+				TargetAttributes = {
+					9871DB491E543837007EFA7E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9871DB451E543837007EFA7E /* Build configuration list for PBXProject "UIControlDevApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9871DB411E543837007EFA7E;
+			productRefGroup = 9871DB4B1E543837007EFA7E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9871DB651E543A10007EFA7E /* Products */;
+					ProjectRef = 9871DB641E543A10007EFA7E /* RWUIControls.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9871DB491E543837007EFA7E /* UIControlDevApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9871DB691E543A11007EFA7E /* libRWUIControls.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRWUIControls.a;
+			remoteRef = 9871DB681E543A11007EFA7E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9871DB481E543837007EFA7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9871DB711E543B44007EFA7E /* Main.storyboard in Resources */,
+				9871DB5D1E543837007EFA7E /* LaunchScreen.storyboard in Resources */,
+				9871DB5A1E543837007EFA7E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9871DB461E543837007EFA7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9871DB521E543837007EFA7E /* AppDelegate.m in Sources */,
+				9871DB721E543B44007EFA7E /* RWViewController.m in Sources */,
+				9871DB4F1E543837007EFA7E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9871DB6B1E543B04007EFA7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RWUIControls;
+			targetProxy = 9871DB6A1E543B04007EFA7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9871DB5B1E543837007EFA7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9871DB5C1E543837007EFA7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9871DB5F1E543837007EFA7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9871DB601E543837007EFA7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9871DB621E543837007EFA7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UIControlDevApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyle.UIControlDevApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9871DB631E543837007EFA7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UIControlDevApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyle.UIControlDevApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9871DB451E543837007EFA7E /* Build configuration list for PBXProject "UIControlDevApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9871DB5F1E543837007EFA7E /* Debug */,
+				9871DB601E543837007EFA7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9871DB611E543837007EFA7E /* Build configuration list for PBXNativeTarget "UIControlDevApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9871DB621E543837007EFA7E /* Debug */,
+				9871DB631E543837007EFA7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9871DB421E543837007EFA7E /* Project object */;
+}
