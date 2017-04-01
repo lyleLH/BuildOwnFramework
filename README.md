@@ -4,7 +4,7 @@
 >依赖工程使用archive时需要注意header search path，
 >直接使用framwork archive的时候需要注意bitcode
 
-##说明
+## 说明
 
 参照raywenderlich网站上的文章来将自己的代码文件打包成可复用的静态framework
 
@@ -14,13 +14,13 @@
 
 现在将整个过程做一个精简的记录，方便以后快速再次实践
 
-##Part 1
+## Part 1
 
 >先生成传统的`.a`静态库
 
-###1.准备好你所有的要打包的代码文件，给你的静态库取一个名字如示例中的RWUIControls
+### 1.准备好你所有的要打包的代码文件，给你的静态库取一个名字如示例中的RWUIControls
 
-###2.创建一个Xcode静态库工程，命名为RWUIControls
+### 2.创建一个Xcode静态库工程，命名为RWUIControls
 	
 	File\New\Project --> iOS\Framework and Library\Cocoa Touch Static Library
 - 创建完成之后会自动生成两个文件 `RWUIControls.h`和`RWUIControls.m`两个文件，将`RWUIControls.m`删除
@@ -45,7 +45,7 @@
 #import <RWUIControls/RWKnobControl.h>
  ```
  
-###3.编译配置
+### 3.编译配置
 
 - 接下来设置好这个静态库的所有暴露的头文件的文件夹路径，`Build Settings`送搜索`Public Headers Folder Path`，然后设置路径参数为`include/$(PROJECT_NAME)`
 
@@ -54,27 +54,27 @@
 	- Strip Debug Symbols During Copy – Set this to NO for all configurations
 	- Strip Style – Set this to Non-Global Symbols
 
-###4.编译然后确认是否生成
+### 4.编译然后确认是否生成
 
 - 选择静态库这个target 编译，之后可以看到`Products `组下的`libRWUIControls.a`文件由之前的红色变为黑色
 - 选中`libRWUIControls.a`右键在finder中查看，`libRWUIControls.a`同级目录下会有一个`include`文件夹，里面包含了你要暴露出来的头文件
 
 
-##Part 2
+## Part 2
 
 >将这个静态库工程应用为你的开发项目的依赖工程的实例，这样的好处是，在开发项目中能随时修改静态库中的代码并编译后作为主工程的依赖被使用
 
-###1.创建一个单应用程序工程命名为`UIControlDevApp`（先关闭之前的的`RWUIControls`工程）
-###2.在Finder中找到`RWUIControls.xcodeproj`文件夹，拖到`UIControlDevApp`中
-###3.将之前应用的业务代码`DevApp `拖到`UIControlDevApp`中，来保证对这个UI库的效果在运行之后能被看到
+### 1.创建一个单应用程序工程命名为`UIControlDevApp`（先关闭之前的的`RWUIControls`工程）
+### 2.在Finder中找到`RWUIControls.xcodeproj`文件夹，拖到`UIControlDevApp`中
+### 3.将之前应用的业务代码`DevApp `拖到`UIControlDevApp`中，来保证对这个UI库的效果在运行之后能被看到
 ###4.现在来保证`UIControlDevApp`程序能够将静态库作为编译依赖，即
 -	选中`UIControlDevApp `Target 导航到`Build Phases`标签下
 -  打开` Target Dependencies` 树，点击` +`来选择 `RWUIControls`静态库
 -  打开`Link Binary With Libraries `,点击` +`来选择 `Workspace`组下的 `libUIControls.a`（确保Xcode能让你的项目链接到这个静态库就像链接到`UIKit`一样）
 
-###5.Build and Run
+### 5.Build and Run
 
-##Part 3
+## Part 3
 
 >先生成framework形式的的静态库,这样一来在别的其他工程中，你只需要将这个`xxx.framework`直接拖到工程中就能使用
 
@@ -219,7 +219,7 @@ ditto "${RW_FRAMEWORK_LOCATION}" "${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework
 
 
 ## Part4 
-###如何使用Framework
+### 如何使用Framework
 
 - 创建一个新的单视图应用程序工程
 - 将桌面上的Framework 拖拽到工程中，拖拽时确保选择`Copy items into destination group’s folder`
