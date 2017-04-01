@@ -1,8 +1,11 @@
 # BuildOwnFramework
 
-
+>注意事项
+>依赖工程使用archive时需要注意header search path，
+>直接使用framwork archive的时候需要注意bitcode
 
 ##说明
+
 参照raywenderlich网站上的文章来将自己的代码文件打包成可复用的静态framework
 
 [原文链接：How to Create a Framework for iOS - Sam Davies posted on raywenderlich.com](https://www.raywenderlich.com/65964/create-a-framework-for-ios)
@@ -12,9 +15,11 @@
 现在将整个过程做一个精简的记录，方便以后快速再次实践
 
 ##Part 1
+
 >先生成传统的`.a`静态库
 
 ###1.准备好你所有的要打包的代码文件，给你的静态库取一个名字如示例中的RWUIControls
+
 ###2.创建一个Xcode静态库工程，命名为RWUIControls
 	
 	File\New\Project --> iOS\Framework and Library\Cocoa Touch Static Library
@@ -73,11 +78,11 @@
 
 >先生成framework形式的的静态库,这样一来在别的其他工程中，你只需要将这个`xxx.framework`直接拖到工程中就能使用
 
-###1.Framework Structure的结构
+### 1.Framework Structure的结构
 
 - [Framework Structure的结构图](https://koenig-media.raywenderlich.com/uploads/2014/02/ios_framework_directory_structure.png)
 
-###2.增加framework编译过程中的脚本
+### 2.增加framework编译过程中的脚本
 - 选中`RWUIControls`target，导航到` Build Phases` 在Xcode顶部菜单中选择`Editor/Add Build Phase/Add Run Script Build Phase`新增一个`Run Script`树，改名字为`Build Framework`,粘贴以下bash脚本:
 
 ```
@@ -101,12 +106,12 @@ mkdir -p "${FRAMEWORK_LOCN}/Versions/A/Headers"
            
 
 ```
-###3.Build
+### 3.Build
 
-###4.检查
+### 4.检查
 - 在`Products`中选中`libRWUIControls.a` 右键在finder中查看，可以看到`RWUIControls.framework`中的目录是否和之前给的framework目录结构一致，但是会发现`Version/A`目录下没有`.a`文件，所以尚未完成
 - 因为这个静态库文件要根据你的工程所运行的平台来编译，模拟器和真机是不一样的，要选择不同的架构编译之后才能生成对应可用的静态库
-###5.多架构编译，创建多平台下可用的聚合体Framework
+### 5.多架构编译，创建多平台下可用的聚合体Framework
 - 选择`RWUIControls `target，在`Project Navigator `下点击` Add Target `，在弹出面板中找到`iOS/Other/Aggregate`，选择后点击下一步，将这个聚合体命名为`Framework `
 - 选择`Framework `target，导航到`Build Phases `面板下，展开`Target Dependencies`树
 ，点击`+`选中`RWUIControls `静态库
@@ -200,7 +205,7 @@ cp -a "${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}" \
 ditto "${RW_FRAMEWORK_LOCATION}" "${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework"
 
 ```
-###6.编译和结果检查
+### 6.编译和结果检查
 
 - 这一次编译将会生成一个`RWUIControls.framework`在你的桌面上
 
@@ -213,7 +218,7 @@ ditto "${RW_FRAMEWORK_LOCATION}" "${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework
 
 
 
-##Part4 
+## Part4 
 ###如何使用Framework
 
 - 创建一个新的单视图应用程序工程
